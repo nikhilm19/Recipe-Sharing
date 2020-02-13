@@ -1,0 +1,163 @@
+<html>
+
+<head>
+  <title>Express</title>
+  <link rel="stylesheet" href="./stylesheets/style.css">
+
+  <script>
+
+    function nextImage() {
+
+      console.log("yes")
+      var images = document.getElementsByClassName("images")
+
+
+      for(var i=0;i<3;i++){
+
+        console.log(images[i])
+        if(images[i].className.indexOf("active")!==-1){
+
+          console.log(i)
+          images[i].className="images"
+          images[(i+1)%3].className+=" fade active"
+          break
+        }
+      }
+
+
+
+
+    }
+
+    function prevImage() {
+
+      console.log("yes")
+      var images = document.getElementsByClassName("images")
+
+
+      for(var i=0;i<3;i++){
+
+        console.log(images[i])
+        if(images[i].className.indexOf("active")!==-1){
+          console.log(i)
+          images[i].className="images"
+          container.className ="image-info-container fadeC"
+          if(i==0){
+            images[2].className+=" fade active"
+
+          }
+          else{
+            images[(i-1)%3].className+=" fade active"
+          }
+
+          break
+        }
+      }
+
+
+
+
+    }
+
+  </script>
+</head>
+
+<body>
+
+<div class="intro-container">
+
+
+  <h1 class="intro-container">SHARE COOK</h1>
+  <h2 class="intro-container">Make once, share always</h2>
+
+  <hr class="intro-container">
+
+</div>
+  <div class="navbar">
+
+
+    <div class="header-list">
+
+      <ul class="header-list">
+        <li><a href="#">Home</a></li>
+
+
+
+        <li class="recipes-dropdown">
+          <button class="recipes-dropdown">My recipes</button>
+          <div class="recipes-dropdown-content">
+
+            <ul class="recipes-dropdown-content">
+            <li  class="recipes-dropdown-content"><a  href="#">Saved Recipes</a></li>
+
+              <li  class="recipes-dropdown-content"><a  class="recipes-dropdown-content"href="#">Add New Recipe</a></li>
+
+           <li  class="recipes-dropdown-content"> <a  class="recipes-dropdown-content" href="#">Share recipe</a></li>
+            </ul>
+          </div>
+
+        </li>
+
+        <li>About</li>
+        <li>Contact</li>
+        <li>Logout</li>
+      </ul>
+    </div>
+  </div>
+<hr class="navbar">
+
+
+<div class="image-carousel-container">
+
+
+  <div class="image-content">
+
+    <div id="first"class="images active">
+      <img src="images/18036263-paneer-makhani-or-shahi-paneer-paneer-butter-masala-indian-curd-cheese-curry-in-a-balti-dish-served-.jpg">
+
+    </div>
+    <div id="second" class="images">
+      <img src="images/49876620-vegetarian-curries-selection-of-south-asian-vegetarian-curries-in-white-bowls-paneer-makhani-palak-p.jpg">
+
+    </div>
+    <div id="third" class="images">
+      <img src="images/77666634-assorted-indian-food-on-dark-wooden-background-dishes-and-appetizers-of-indian-cuisine-curry-butter-.jpg">
+
+    </div>
+
+  </div>
+
+  <div class="image-info-container fadeC">
+    <div class="image-info">
+      <h2 class="image-info-content">Hello</h2>
+      <a class="image-info-content"> ></a>
+    </div>
+
+
+  </div>
+
+  <div class="menu-arrows">
+
+
+    <a class="prev" onclick="prevImage();" ><</a>
+    <a class="next" onclick="nextImage();">></a>
+
+
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

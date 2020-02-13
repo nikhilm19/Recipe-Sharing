@@ -1,0 +1,333 @@
+html {
+  height: 100%;
+
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+  background: linear-gradient(to top left,rgba(72, 67, 69, 0.8), rgba(44,62,80 ,0.8)) , url("https://cdn.hipwallpaper.com/i/94/14/pXJZhf.jpg");
+
+
+
+  background-color: rgb(245, 245, 245);
+  margin: 0px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+li{
+
+  font-size: 20px;
+  padding: 35px;
+  float: left;
+  list-style: none;
+}
+
+.header-logo{
+  float: left;
+  padding: 15px;
+  font-size: 25px;
+  align-self: center;
+  align-content: center;
+
+
+}
+
+div.navbar{
+
+  height: 60px;
+  color: #fff;
+  width: 100%;
+  margin: auto;
+  color: black;
+
+
+}
+.header-list{
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+}
+
+
+.intro-container{
+  margin: auto;
+
+
+  width: 100%;
+
+
+
+
+}
+
+h1.intro-container{
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+  color: white;
+}
+
+h2.intro-container{
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  color: #b2bdef;
+
+  font-size: 15px;
+  padding-bottom: 30px;
+}
+
+hr.intro-container{
+  border-top: 0.1px solid grey;
+  margin: auto;
+  width: 90%;
+}
+
+
+.recipes-dropdown{
+  display: inline-block;
+}
+button.recipes-dropdown{
+  background-color: transparent;
+  border: none;
+
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color:wheat;
+
+
+
+}
+
+.recipes-dropdown:hover  ul.recipes-dropdown-content {
+
+  display: inline-block;
+  width: 200px;
+  padding: 0px;
+  transform: translateX(0);
+
+}
+
+li.recipes-dropdown-content{
+  margin: 10px;
+  padding: 0px;
+  font-size: 16px;
+}
+
+
+
+
+
+ul.recipes-dropdown-content{
+
+  display: none;
+
+  position: absolute;
+  background-color: black;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+  text-decoration: orange;
+  overflow:hidden;
+
+
+
+
+
+}
+
+hr.navbar{
+
+  border-top: 1px dashed red ;
+}
+
+
+.menu-arrows{
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  height: min-content;
+  margin: 10px;
+
+
+
+
+}
+
+.images {
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
+
+}
+
+
+
+div.images.active{
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+}
+div.images.active img{
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.image-carousel-container{
+
+
+  box-sizing: border-box;
+  background-color: white;
+  height: 600px;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: 85%;
+}
+
+.prev,.next{
+  background-color: orange;
+  padding:5px;
+
+  border-radius: 50%;
+  width: 20px;
+  text-align: center;
+  margin: 5px;
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+
+  transition: 0.6s ease;
+}
+
+.prev:hover,.next:hover{
+  background-color:dodgerblue;
+}
+
+
+
+.image-content{
+  background-color: wheat;
+  display: flex;
+  height: 100%;
+  width:100%;
+  flex-shrink: 0;
+}
+
+.fade {
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-direction: reverse;
+
+}
+
+
+.fadeC {
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.image-info-container{
+
+  background-color:
+          orange;
+  margin-top: -70px;
+  height: 100px;
+  flex-shrink: 0;
+  width: 42%;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+
+
+}
+
+.image-info-container:active{
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+.image-info{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: row;
+
+}
+
+
+
+.image-info-content{
+  color:
+          white;
+  margin: auto auto auto auto;
+  text-align: center;
+  display: flex;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+a.image-info-content{
+  cursor: pointer;
+  background-color: red;
+  transition: ease-in-out 1s;
+  width: 25%;
+}
+
+
+h2.image-info-content{
+  width: 75%;
+}
+
+a.image-info-content:hover{
+  background-color: orange;
+  transition: ease-in-out 1s;
+  font-size: xx-large;
+}
