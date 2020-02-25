@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+
+    <link rel="stylesheet" href="stylesheets/signup.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <script>
+
+        console.log("yes")
+
+        function signup(){
+
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            console.log("hello");
+            console.log(email+" "+password)
+
+            var tnc = document.getElementById("agreement").checked;
+            if(tnc){
+
+
+                //tnc checked
+
+
+            }
+
+            else{
+
+                alert("Please o")
+            }
+
+            console.log(tnc)
+        }
+    </script>
+</head>
+
+
+
+<body>
+
+<main>
+
+    <section class="developer-testimonial">
+
+        <img src="images/IMG_20180507_091214_961_2(2).jpg"></img>
+
+        <h1>Nikhil Mulchandani</h1>
+
+        <p>
+            Developed with ❤️ by Nikhil<br>
+
+        .</p>
+
+
+    </section>
+
+
+    <form class="signup-form">
+
+        <h1>Signup</h1>
+
+
+        <div class="signup-form">
+
+
+            <input type="email" placeholder="Email Address" name="email" id="email">
+            <br>
+
+
+            <input type="password" placeholder="Password" name="password" id="password">
+
+
+        </div>
+
+        <div >
+
+            <input type="checkbox" name="agreement" id="agreement">
+            <span>I agree to TNC</span>
+
+
+        </div>
+        <input type="button" onclick="signup()" value="Submit" ></input>
+
+
+
+
+
+    </form>
+</main>
+
+</body>
+</html>

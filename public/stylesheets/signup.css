@@ -1,0 +1,115 @@
+main{
+
+
+
+    width: 75%;
+
+    display: flex;
+    flex-shrink: 0;
+
+    background-color: #F2FCFC;
+    border-radius: 20px;
+    line-height: 1.8;
+}
+img{
+
+    display: block;
+    margin: auto;
+
+
+    width: 115px;
+    height: 120px;
+    border-radius: 50%;
+
+}
+
+
+body{
+    background-color: rgba(124, 249, 251, 0.7);
+
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+section, form {
+
+    width: 50%;
+
+    padding: 50px 70px;
+}
+
+.signup-form{
+
+    font-family: 'Montserrat', sans-serif;
+
+
+
+
+}
+
+input[type="email"]{
+
+    height: 30px;
+    width: 70%;
+    border: none;
+    border-bottom: grey solid 2px ;
+    font-size: 16px;
+
+    background-color: transparent;
+    margin-bottom: 25px;
+}
+
+
+input[type="password"]{
+
+    height: 30px;
+    width: 70%;
+    border: none;
+    font-size: 16px;
+    border-bottom: grey solid 2px ;
+
+    background-color: transparent;
+    margin-bottom: 25px;
+
+}
+input[type="checkbox"]{
+
+
+
+    background-color: transparent;
+    margin-bottom: 25px;
+
+}
+
+input[type="button"]{
+
+    background-color: #110fcc;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 35px;
+    border: none;
+
+    cursor:pointer;
+
+}
+
+section.developer-testimonial{
+
+
+    border-right:
+            #c9d2d4 solid 1px;
+    margin: 30px;
+
+}
+
+.developer-testimonial{
+    text-align: center;
+}
