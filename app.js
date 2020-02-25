@@ -16,7 +16,7 @@ app.use(cookieParser());
 
 
 
-app.use('/signup', indexRouter);
+app.use('/github', indexRouter);
 
 app.use("/",express.static("public"))
 
